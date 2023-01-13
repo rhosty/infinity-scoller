@@ -38,10 +38,8 @@ function displayImages(){
     picsFromApi.forEach((photo) => {
         const item = document.createElement('a');
         item.setAttribute('href', photo.links.html)
-        item.setAttribute('target', '_blank');
         const image = document.createElement('img');
         image.setAttribute('src', photo.urls.small);
-        image.setAttribute('alt', photo.alt_description);
         image.setAttribute('title',photo.alt_description);
         item.appendChild(image);
         container.appendChild(item); 
