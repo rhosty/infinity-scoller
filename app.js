@@ -32,7 +32,7 @@ async function getPics(){
 //on load
 getPics()
 
-//function that creates the elements in the dom so the pictures fetched from the api can be dissplayed
+//function that creates the elements in the dom so the pictures fetched from the api can be dissplayed.
 
 function displayImages(){
     picsFromApi.forEach((photo) => {
