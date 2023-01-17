@@ -1,18 +1,18 @@
 
 loader.hidden = true;
 
+
 window.addEventListener('scroll', () =>{
-    isScrolled++
-    console.log(isScrolled)
-     if(isScrolled > 150){
+    
+     if (window.scrollY == document.body.offsetHeight * 0.7  ){
+        
          getPics()
-         isScrolled = 0;
      }
  } )
 
-let isScrolled = 0;
+
 const container = document.getElementById('container');
-let count = 30;
+let count = 10;
 const apiKey = "Pq7Cke37pKTfO3yIU6ZNu6vEUoutLEcwQnVFZG3UdHw";
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 let picsFromApi = [];
