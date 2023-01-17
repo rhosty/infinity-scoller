@@ -3,17 +3,16 @@ loader.hidden = true;
 
 
 window.addEventListener('scroll', () =>{
-    
-     if (window.scrollY == document.body.offsetHeight * 0.7  ){
-        
+    console.log
+     if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight)){
          getPics()
      }
  } )
 
 
 const container = document.getElementById('container');
-let count = 10;
-const apiKey = "Pq7Cke37pKTfO3yIU6ZNu6vEUoutLEcwQnVFZG3UdHw";
+let count = 1;
+const apiKey = "RE9-5YoN6fELs7i_qA6oirHF4W1Of0PTDXIIaw8HMGw";
 const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 let picsFromApi = [];
 
